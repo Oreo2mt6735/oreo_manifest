@@ -50,7 +50,7 @@ Building for your device
 git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b los15.0  device/tecno/Camon
 ```
 ```
-git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b master vendor/tecno/Camon
+git clone https://github.com/Oreo2mt6735/oreo_vendor_camon_c7.git -b master vendor/tecno/Camon
 ```
 ```
 git clone https://github.com/Oreo2mt6735/oreo_vendor_mt67xx.git -b n-7.1.2 vendor/mt67xx
