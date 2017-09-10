@@ -64,7 +64,7 @@ APPLY IF YOU HAVE YOUR PATCHES AVAILABLE
 
  + $ ```. build/envsetup.sh```
  - $ ```lunch```
-    and select your device from menu [select ```lineage_Camon_C7-userdebug```]
+    and select your device from menu [select ```lineage_Camon-userdebug```]
 
   ```
    brunch Camon
