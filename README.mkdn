@@ -1,0 +1,76 @@
+
+![OREO](https://github.com/Oreo2mt6735/oreo_manifest/blob/master/assert/oreo.png "OREO FOR MTK")
+
+Getting Started
+---------------
+
+To get started with Android/LineageOS, you'll need to get
+familiar with [Git and Repo](https://source.android.com/source/using-repo.html).
+
+To initialize your local repository using the LineageOS trees, use a command like this:
+
+    repo init -u git://github.com/LineageOS/android.git -b lineage-15.0
+
+Then to sync up:
+
+    repo sync
+    
+    
+Building for your device 
+------------------------
+1. Download both device tree and vendor tree and extract them to device/tecno/Camon and vendor/tecno/Camon respectivly.
+  or cd to your working directory. To do that, simply create a local_manifest.xml to ```sourcedir/.repo/local_manifests```
+  Note that , by default ``local_manifest``` directory is not available to you must create it yourself.
+  so :
+  ```
+     $ cd .repo && mkdir local_manifests
+     $ cd local_manifests
+     $ > local_manifest.xml && nano local_manifest.xml
+  ```
+  then copy to paste this in the nano page :
+ ```xml
+ <?xml version="1.0" encoding="UTF-8"?>
+ <manifest>
+         <project path="device/tecno/Camon" name="Oreo2mt6735/oreo_device_camon_c7.git" remote="github" revision="los15.0"/>
+
+         <project path="vendor/tecno/Camon" name="Oreo2mt6735/oreo_vendor_camon_c7.git" remote="github" revision="master"/>
+  
+         <project path="vendor/mt67xx" name="Oreo2mt6735/oreo_vendor_mt67xx.git" remote="github" revision="n-7.1.2"/>
+
+ </manifest>
+  ```
+  as you use ```ctrl+x``` to save.
+   | now back to sourcedir, then use : ```repo sync --force-sync``` to resync
+
+
+  # OR
+
+
+```
+git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b los15.0  device/tecno/Camon
+```
+```
+git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b master vendor/tecno/Camon
+```
+```
+git clone https://github.com/Oreo2mt6735/oreo_vendor_mt67xx.git -b n-7.1.2 vendor/mt67xx
+```
+
+# you have to/must patch your MTK to meet boot up requirements :)
+```
+APPLY IF YOU HAVE YOUR PATCHES AVAILABLE
+```
+
+
+ *. $ ```. build/envsetup.sh```
+ *. $ ```lunch```
+  and select your device from menu [select ```lineage_Camon_C7-userdebug```]
+
+  ```
+   brunch Camon
+  ```
+ + It will take time to compile your build
+ - Find your build in $out directory
+ + Enjoy
+
+---------------
