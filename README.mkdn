@@ -31,11 +31,9 @@ Building for your device
  ```xml
  <?xml version="1.0" encoding="UTF-8"?>
  <manifest>
-         <project path="device/tecno/Camon" name="Oreo2mt6735/oreo_device_camon_c7.git" remote="github" revision="los15.0"/>
+         <project path="device/tecno/Camon_C7" name="Oreo2mt6735/oreo_device_camon_c7.git" remote="github" revision="los15.0"/>
 
-         <project path="vendor/tecno/Camon" name="Oreo2mt6735/oreo_vendor_camon_c7.git" remote="github" revision="master"/>
-  
-         <project path="vendor/mt67xx" name="Oreo2mt6735/oreo_vendor_mt67xx.git" remote="github" revision="n-7.1.2"/>
+         <project path="vendor/tecno/Camon_C7" name="Oreo2mt6735/oreo_vendor_camon_c7.git" remote="github" revision="master"/>
 
  </manifest>
   ```
@@ -47,12 +45,13 @@ Building for your device
 
 
 ```
-git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b los15.0  device/tecno/Camon
+git clone https://github.com/Oreo2mt6735/oreo_device_camon_c7.git -b los15.0  device/tecno/Camon_C7
 ```
 ```
-git clone https://github.com/Oreo2mt6735/oreo_vendor_camon_c7.git -b master vendor/tecno/Camon
+git clone https://github.com/Oreo2mt6735/oreo_vendor_camon_c7.git -b master vendor/tecno/Camon_C7
 ```
 ```
+ONLY WHEN NEEDED !!!
 git clone https://github.com/Oreo2mt6735/oreo_vendor_mt67xx.git -b n-7.1.2 vendor/mt67xx
 ```
 
@@ -64,10 +63,10 @@ APPLY IF YOU HAVE YOUR PATCHES AVAILABLE
 
  + $ ```. build/envsetup.sh```
  - $ ```lunch```
-    and select your device from menu [select ```lineage_Camon-userdebug```]
+    and select your device from menu [select ```lineage_Camon_C7-userdebug```]
 
   ```
-   brunch Camon
+   brunch Camon_C7
   ```
  + It will take time to compile your build
  - Find your build in $out directory
