@@ -58,6 +58,8 @@ git clone https://github.com/Oreo2mt6735/oreo_vendor_mt67xx.git -b n-7.1.2 vendo
 # you have to/must patch your MTK to meet boot up requirements :)
 ```
 APPLY IF YOU HAVE YOUR PATCHES AVAILABLE
+
+cd devices/tecno/Camon_C7/patches && ./check-patches.sh && ./apply-patches.sh
 ```
 
 
